@@ -67,3 +67,60 @@ table {
   width: 100%;
 }
 /*RESET*/
+header,
+.container, 
+.section
+{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.clearfix:after,
+.container:after,
+header:after,
+.section:after{
+  content: '';
+  overflow: hidden;
+  clear: both;
+  display: table;
+}
+
+header{
+  display: block;
+}
+.header__mobile{
+  display: inline-block;
+}
+.header__form{
+  background-color: black;
+}
+.header__section__news{
+  display: inline-block;
+  width: 12%;
+  text-decoration: none;
+}
+.advice{
+  text-align:right;
+  }
+.article__pic{
+  float: left;
+}
+.news{
+  border-top: 1px solid black; 
+}
+.news_time{
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;  
+  float: left; 
+}
+.news_date{
+  display: block;
+  clear: both;
+}
+.footer{
+  background-color: black;
+}
+.section{
+  width: 1200px;}
+  
