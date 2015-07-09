@@ -6,7 +6,7 @@
 	<title>Blog</title>
 	<link rel="stylesheet" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,400&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Clear+Sans:300,400,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header>
@@ -16,7 +16,8 @@
 				<a href="" class="vk">VK</a>
 				<a href="" class="fb">FB</a>
 				<img src="pic1/agent.png" alt="" class="header__mobile__pic">
-				<a href="" class="enter">Вхід</a>
+
+				<a href="" class="enter" id="enter_modal">Вхід</a>
 			</div>
 		</div>
 		<div class="header__form">
@@ -81,9 +82,14 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit ipsam architecto fugit adipisci pariatur ea cum, rerum commodi laudantium aspernatur sequi quas laboriosam expedita, illo at doloremque. Commodi, possimus!
 				</p>
 				</div>
-				<p class="h5">Lorem ipsum dolor sit amet,</br> consectetur adipisicing elit. <a href="">
+				<p class="h5">Lorem ipsum dolor sit amet,</br> consectetur adipisicing elit. </p>
+				
+					<a href="#" class="read">
 					Читати далі >>
-				</a></p>
+				</a>
+				
+				
+
 			
 			</article >
 			<img src="pic1/reklama.png" alt="" class="banner_reklama">
@@ -248,11 +254,12 @@
 							<a href="" class="links_about">Контакти</a>
 							<a href="" class="links_about">Реклама</a>
 							<a href="" class="links_about mobile">Мобільна версія</a>
-						</div>
+					
 						<div class="footer_network"> 
 							<a href="" class="links"><img src="pic1/ikon_vk.png" alt=""></a>
 							<a href="" class="links"><img src="pic1/ikon_fb.png" alt=""></a>
 						</div>
+							</div>
 						<div class="footer_logo">	
 							<span class="footer_logo_text"> Знайши опечатку? Тисніть Cntr+Enter</span>
 							<img src="pic1/footer_logo.png" alt="" class="footer_logo">
@@ -267,50 +274,56 @@
 						<span class="footer_bottom_text">Яценюк вимагає від Росії негайно вивести війська</span>
 					</div>
 				</div>	
+	
+
+	<div class="modal_bg">
 		<div class="modal">
-			<div class="column_one">
+
+			<form class="column_one">
 				<div class="enter_modal">
 					<h4>Вхід</h4>
 				</div>	
 				<div class="form1">
-					<p class="form_text">E-MAIL</p>
-					<form action="" class="form_email">
+					<label for="ikon1" class="form_text">E-MAIL</p>
+					<p class="form_email">
 						<input 
 							type="email" 
 							name="email"
 							id="ikon1"
 							class=""/>  
-					</form>
+					</p>
 				</div>	
 				<div class="form2">
-					<p class="form_text">Пароль</p>
-						<form action="" class="form_email">
+					<label for="ikon2" class="form_text">Пароль</p>
+						<p class="form_email">
 						<input 
 							type="email" 
 							name="email"
-							id="ikon1"
+							id="ikon2"
 							class=""/>  
-					</form>
+					</p>
 				</div>
-				<div class="memory">
-					  <input type="checkbox" id="check_memory" />
-					  <label for="check_memory" class="memory-text">
-					  Запам'ятати мене
-					  </label>
-				</div>	
-				<button class="form_button">
+
+				<div class="main_check">
+					<input type="checkbox" class="checkbox" id="checkbox" />
+					<label for="checkbox"> <span class="memory-text">Запам'ятати мене </span></label>
+				</div>
+
+				<button type="submit" class="form_button">
 					Увійти
 				</button>
-			</div>
+			</form>
 		
-				<div class="modal_network">
-					<a href=""  class="close_widow">[X]</a>
-					<p class="network_text">або увійдіть через соц. </br>мережі</p>
-					<a href="" class="modal_fb"><img src="pic1/form_fb.png" alt=""></a>
-					<a href="" class="moadl_vk"><img src="pic1/form_vk.png" alt=""></a>
-				</div>
+			<div class="modal_network">
+				<a href=""  class="close_widnow">[X]</a>
+				<p class="network_text">або увійдіть через соц.мережі</p>
+				<p class="modal_links">
+				<a href="" class="modal_fb"><img src="pic1/form_fb.png" alt=""></a>
+				<a href="" class="moadl_vk"><img src="pic1/form_vk.png" alt=""></a>
+				</p>
+			</div>
 		</div>
-
+	</div>
 	</footer>
 </body>
 </html>
